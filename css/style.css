@@ -223,7 +223,7 @@
 
 
 body{
-    max-width: 1920px;
+    max-width: 100%;
     margin: 0 auto !important;
 }
 
@@ -374,11 +374,13 @@ a{
     background-size: cover;
 }
 .bag1{
+    width: 100%;
     position: absolute;
     top: 0;
     right: 0;
 }
-.bag2{
+.bag2 {
+    width: 100%;
     position: absolute;
     top: 0;
     right: 0;
@@ -516,6 +518,7 @@ right: 168px;
     left: 0;
     max-width: 100%;
     top: -80px;
+    width: 100%;
 }
 #services .row{
     position: relative;
@@ -791,13 +794,16 @@ input:focus{
     padding-top: 30px;
   }
   .slider_review_it{
-    padding: 55px 45px 0px 59px;
+    padding: 55px 45px 30px 59px;
     background: #FFFFFF;
-   /* box-shadow: 0px 7px 14px  rgba(0, 0, 0, 0.1);*/
+   box-shadow: 0px 7px 14px  rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-
+    height: initial !important;
     text-align: center;
-
+    display: flex !important;
+    justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
   }
 
 .review_content{
@@ -812,6 +818,7 @@ input:focus{
     padding-bottom: 41px;
     position: relative;
     z-index: 2;
+
 }
 .review_aftor{
     font-weight: 600;
@@ -843,6 +850,7 @@ input:focus{
     
 }
 .slider_review_it p.what_done{
+    min-height: auto;
     font-weight: 400;
 font-size: 16px;
 line-height: 19px;
@@ -859,6 +867,7 @@ z-index: 1;
     left: -12px;
     top: 0;
     width: calc(100% + 24px);
+    display: none;
 }
 
 .swiper-pagination{
@@ -895,7 +904,6 @@ opacity: 1 !important;
 .tarifs_content{
     padding-top: 30px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -911,6 +919,10 @@ opacity: 1 !important;
     background-repeat: no-repeat;
     background-position: top;
     padding-bottom: 51px;
+    position: relative;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .tarif_item h3{
     font-weight: 700;
@@ -949,15 +961,17 @@ color: #000000;
     color: #000000;
     padding: 20px 20px 46px 20px;
 }
-.tarif_item a{
+.tarif_item a {
+    position: absolute;
     font-weight: 600;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
-padding: 17px 81px;
-color: #FFFFFF;
-background: #0C78ED;
-border-radius: 5px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding: 17px 81px;
+    color: #FFFFFF;
+    background: #0C78ED;
+    border-radius: 5px;
+    bottom: 30px;
 }
 .tarif_item hr{
     margin: 0;
@@ -1185,6 +1199,7 @@ line-height: 21px;
 color: #FFFFFF;
 }
 .main_fon_2{
+    width: 100%;
     position: absolute;
     top: 0;
     right: 0;
@@ -1253,7 +1268,28 @@ color: #FFFFFF;
     right: 0;
 }
 
+@media (max-width:1919px) {
 
+.main_fon_2 {
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bag1 {
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bag2 {
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+}
 
 
 @media (max-width:1550px) {
